@@ -8,9 +8,9 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            MoodAnalyser obj = new MoodAnalyser("HAPPY");
+            MoodAnalyser obj = new MoodAnalyser("SAD");
             string result = obj.analyseMood();
-            Assert.AreEqual("HAPPY", result);
+            Assert.AreEqual("SAD", result);
         }
     }
 }
