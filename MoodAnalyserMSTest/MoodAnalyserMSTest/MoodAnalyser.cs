@@ -13,12 +13,12 @@ namespace MoodAnalyserMSTest
         {
             this.message = message;
         }
-        public void analyseMood()
+        public string analyseMood()
         {
             if (this.message.ToUpper().Contains("SAD"))
-                Console.WriteLine("The user mood is SAD");
+                return "SAD";
             else
-                Console.WriteLine("The user mood is HAPPY");
+                return "HAPPY";
         }
     }
 }
