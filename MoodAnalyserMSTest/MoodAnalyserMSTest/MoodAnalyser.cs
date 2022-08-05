@@ -18,7 +18,7 @@ namespace MoodAnalyserMSTest
         }
         public string analyseMood()
         {
-            if (this.message.Contains("sad"))
+            if (this.message.ToUpper().Contains("SAD"))
                 return "SAD";
             else
                 return "HAPPY";
