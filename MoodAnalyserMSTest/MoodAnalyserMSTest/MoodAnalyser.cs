@@ -24,10 +24,6 @@ namespace MoodAnalyserMSTest
                 {
                     throw new CustomException(CustomException.ExceptionType.NULL_MESSAGE, "Mood should not be null");
                 }
-                if (this.message.Equals(string.Empty))
-                {
-                    throw new CustomException(CustomException.ExceptionType.EMPTY_MESSAGE, "Mood should not be empty");
-                }
                 else if (this.message.ToUpper().Contains("SAD"))
                     return "SAD";
                 else
