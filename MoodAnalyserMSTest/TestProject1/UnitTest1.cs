@@ -8,8 +8,8 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            MoodAnalyser obj = new MoodAnalyser("SAD");
-            string result = obj.analyseMood();
+            MoodAnalyser obj = new MoodAnalyser();
+            string result = obj.analyseMood("SAD");
             Assert.AreEqual("SAD", result);
         }
     }
