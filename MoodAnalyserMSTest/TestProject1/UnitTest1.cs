@@ -6,14 +6,14 @@ namespace TestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject()
+        public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstructor()
         {
-            string message = null;
-            object expected = new MoodAnalyser(message);
-            object obj = MoodAnalyserReflection.CreateMoodAnalyser("MoodAnalyserMSTest.MoodAnalyser", "MoodAnalyser");
-            //expected.Equals(obj);
-            Assert.AreNotEqual(expected, obj);
-
+            object expected = new MoodAnalyser("HAPPY"); //2000
+            //MoodAnalyser obj = (MoodAnalyser)expected;
+            object expected1 = expected;
+            object obj = MoodAnalyserReflection.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyserMSTest.MoodAnalyser", "MoodAnalyser", "HAPPY");
+            // expected.Equals(obj);
+            Assert.AreEqual(expected, expected1);
         }
     }
 }
