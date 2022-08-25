@@ -34,10 +34,6 @@ namespace MoodAnalyserMSTest
                 {
                     Console.WriteLine("Something wrong happened.");
                 }
-            else
-            {
-                throw new CustomException(CustomException.ExceptionType.NO_SUCH_METHOD, "Constructor is not found");
-            }
             return null;
         }
     }
