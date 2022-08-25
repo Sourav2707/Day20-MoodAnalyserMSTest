@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace MoodAnalyserMSTest
 {
-    public class MoodAnalyserReflection
+    public class MoodAnalyserReflector
     {
         private string message;
-        public MoodAnalyserReflection(string message)
+        public MoodAnalyserReflector(string message)
         {
             this.message = message;
         }

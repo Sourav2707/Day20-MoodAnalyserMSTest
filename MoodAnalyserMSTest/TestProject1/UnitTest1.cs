@@ -11,7 +11,7 @@ namespace TestProject1
             object expected = new MoodAnalyser("HAPPY"); //2000
             //MoodAnalyser obj = (MoodAnalyser)expected;
             object expected1 = expected;
-            object obj = MoodAnalyserReflection.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyserMSTest.MoodAnalyser", "MoodAnalyser", "HAPPY");
+            object obj = MoodAnalyserReflector.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyserMSTest.MoodAnalyser", "MoodAnalyser", "HAPPY");
             // expected.Equals(obj);
             Assert.AreEqual(expected, expected1);
         }
