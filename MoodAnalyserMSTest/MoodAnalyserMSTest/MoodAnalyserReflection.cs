@@ -18,11 +18,11 @@ namespace MoodAnalyserMSTest
             string pattern = @"." + constructorName + "$";
             Match result = Regex.Match(className, pattern);
             if (result.Success)
-            {
+                {
                     Assembly executing = Assembly.GetExecutingAssembly();
                     Type moodAnalyseType = executing.GetType(className);
                     return Activator.CreateInstance(moodAnalyseType);
-            }
+                }
             return null;
         }
     }
