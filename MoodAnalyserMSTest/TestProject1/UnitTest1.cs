@@ -10,7 +10,7 @@ namespace TestProject1
         {
             object expected = new MoodAnalyser("HAPPY");
             object expected1 = expected;
-            object obj = MoodAnalyserReflector.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyserMSTest.MoodAnalyser", "ModAnalyser", "HAPPY");
+            object obj = MoodAnalyserReflector.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyserMSTest.MoodAnalyser", "MoodAnalyser", null);
             Assert.AreEqual(expected, expected1);
         }
     }
